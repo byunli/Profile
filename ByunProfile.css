@@ -1,0 +1,202 @@
+/* 
+所有 
+box-sizing;border-box
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Commissioner", sans-serif;
+  /* scroll-behavior: smooth; */
+  /* body scroll-behavior:smooth; } */
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* overflow: hidden; */
+}
+
+#navbar-right {
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 17px;
+}
+
+.btn {
+  padding: 10px 20px;
+  /* width: 100px; */
+  height: 40px;
+  background-color: black;
+  opacity: 0.5;
+  /* font-size: 20px; */
+  display: block;
+  float: right;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  /* 進去出來才都會漸漸變色 */
+  transition: background-color 5s ;
+}
+
+/* a {
+  text-decoration:none;
+} */
+
+a:hover {
+  background-color: darkorange;
+}
+
+.bg-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./images/C1.jpg');
+  /* background-image: url("https://www.w3schools.com/howto/img_parallax.jpg"); */
+  background-size: cover;
+  background-position: center;
+  /* 定位 */
+  position: relative;
+  /* opacity: 0.6; */
+  background-attachment: fixed;
+}
+
+/* rgba(red, green, blue, alpha) */
+
+/* rgba(紅,綠,藍,透明度) */
+
+/* 紅綠藍可輸入0到255 */
+
+/* 透明度0到1可用小點 */
+
+.black_box {
+  width: 330px;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 文字樣式修改 */
+  color: #fff;
+  font-size: 25px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 10px;
+  /* Standard weight. Equivalent of 400. */
+  font-weight: 400;
+  /* 定位 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translate(X軸,Y軸); */
+  /* 往左要- 往右要+ */
+  /* 往上要- 往下要+ */
+  /* transform的%是指element本身的寬高，方框往上移動 */
+  /* 要多個參數需在後方添加不可另外再寫一行 */
+}
+
+.mask {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.1;
+}
+
+#area2 {
+  /* 記得扣掉padding避免爆版 */
+  width: 100%;
+  height: auto;
+  /* padding: 上下 左右 */
+  padding: 50px 80px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  /* margin: 上下 左右 */
+  /* margin: 0 auto; */
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+p {
+  font-size: 15px;
+  /* text-align:justify 內容與外框左右切齊 */
+  text-align: justify;
+  line-height: 25px;
+  letter-spacing: 1px;
+  /* 內文顏色比標題淡一點，視覺較好 */
+  color: #777;
+}
+
+.bg-3 {
+  background-size: cover;
+  background-position-y: center;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  
+}
+#hovermask{
+  height: 400px;
+  width: 100%;
+  background-color: black;
+
+}
+#hovermask:hover{
+  opacity: 0.3;
+  transition: 3s;
+}
+
+
+.content1 {
+  /* 定位 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #fff;
+}
+
+#area3 {
+  background-image: url('./images/B1.jpg');
+  /* background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg"); */
+}
+
+#area4 {
+  background-image: url('./images/B2.jpg');
+  /* background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg"); */
+}
+#area5 {
+  background-image: url('./images/A1.jpg');
+  /* background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg"); */
+}
+
+.bg-4 {
+  width: 100%;
+  background-color: #282e34;
+  padding: 50px 80px;
+}
+
+.p1 {
+  color: #fff;
+}
